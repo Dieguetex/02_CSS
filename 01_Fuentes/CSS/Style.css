@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+*,
+*::after, *::before
+*:after, *:before { 
+    box-sizing: border-box;
+}
+
+.icono_inicio {
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: brown;
+    border-radius: 50%
+    
+}
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+p.tres {
+    font-family: 'Muli', sans-serif;
+}
