@@ -10,69 +10,91 @@
     <meta name="keywords" content="EEUU, geografía, historia, estados unidos">
     <title>Estados Unidos de América</title>
     <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <main>
-        <header>
-            <h1>Estados Unidos de América</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#geografia">Geografía</a>
-                    </li>
-                    <li>
-                        <a href="#historia>">Historia</a>
-                    </li>
-                    <li>
-                        <a href="#economia">Economía</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
 
+    <!-- #1 - Como hacer :hover sin poner dos lineas.
+        #2 - Agrandar el nav hacia arriba
+        #3 - Agrandar proporcionalmente el icono de mail
+    -->
+
+    <header>
+        <h1>
+            <a href="./Index.html">Estados Unidos de América</a>
+        </h1>
+        <div class="icono_inicio">
+            <a href="mailto:diegopmansilla@gmail.com">
+                <span class="size_letras">Contacto</span>
+                <i class="fas fa-envelope-open"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#geografia">Geografía</a>
+                </li>
+                <li>
+                    <a href="#historia">Historia</a>
+                </li>
+                <li>
+                    <a href="#economia">Economía</a>
+                </li>
+                <li>
+                    <a href="./About.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
         <!-- inicio // IMAGEN & TABLA-->
         <section class="inicio" id="inicio">
             <article>
                 <h2>Introducción</h2>
-                <img src="./Assets/ico-destinonegocio-ee.uu-istock-getty-images-1019x430.jpg" alt="Bandera de estados unidos fundida con un hombre caminando al frente de unos edificios de una ciudad">
-
+                <div>
+                    <img src="./Assets/ico-destinonegocio-ee.uu-istock-getty-images-1019x430.jpg" alt="Bandera de estados unidos fundida con un hombre caminando al frente de unos edificios de una ciudad">
+                </div>
                 <table>
                     <thead>
                         <tr>
                             <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Normopeso</th>
+                            <th>Sobrepeso</th>
+                            <th>Obesidad</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            <th>2003</th>
+                            <td>48,46</td>
+                            <td>35,91</td>
+                            <td>13,32</td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            <th>2006</th>
+                            <td>45,50</td>
+                            <td>37,43</td>
+                            <td>15,25</td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            <th>2009</th>
+                            <td>44,28</td>
+                            <td>37,65</td>
+                            <td>16,00</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th></th>
-                            <td></td>
-                            <td></td>
+                            <th>2012</th>
+                            <td>44,16</td>
+                            <td>36,65</td>
+                            <td>17,03</td>
                         </tr>
                     </tfoot>
                 </table>
@@ -207,7 +229,7 @@
                     (como se llamaban a sí mismos) se adherían a una ideología política llamada republicanismo que enfatizaba
                     el deber cívico, la virtud y la oposición a la corrupción, los lujos de fantasía y la aristocracia.</p>
 
-                <div>
+                <div class="imagentexto">
                     <img src="./Assets/Declaracion_independencia_eeuu.jpg" alt="hoja real de la declaración de independencia de EEUU">
                 </div>
 
@@ -321,10 +343,10 @@
                     en estos términos a Estados Unidos, una de las naciones más ricas del mundo.​ Es también el mayor productor
                     industrial del mundo,y el país comercial más grande del mundo, teniendo como principales socios comerciales
                     a China, Canadá y México.</p>
-                
-                <div>
-                    <img src="./Assets/economia-usa-640x342.jpg">
-                </div>    
+
+                <div class="imagentexto">
+                    <img class="imagentexto" src="./Assets/economia-usa-640x342.jpg">
+                </div>
 
                 <p>La economía de Estados Unidos hace de su moneda, el dólar estadunidense, y el idioma, el inglés, los medios
                     de comunicación y de comercio a nivel mundial.</p>
@@ -341,7 +363,8 @@
                     cualquier otro país en el mundo.​ El mercado de trabajo en los Estados Unidos ha atraído a inmigrantes
                     de todo el mundo y su tasa neta de migración se encuentra entre las más altas del mundo. Está considerado
                     como el país con más facilidades para hacer negocio y está situado en 4º lugar en el Índice de Competitividad
-                    Global.</p>
+                    Global.
+                </p>
 
                 <p>Su poderosa moneda, el dólar estadounidense, representa el 60 % de las reservas mundiales, mientras que el
                     euro representa el 24 %. Posee el mayor mercado financiero y es un país que destaca por su influencia
@@ -360,29 +383,30 @@
     </main>
 
     <footer>
-        <address>
+        <div>
+            <address>
 
-            <!-- Tarjeta de datos personales -->
-            <div id="hcard-Diego-Pérez" class="vcard">
-                <div class="org">CFTIC</div>
-                <!-- <div hidden> -->
-                <span class="fn">Diego Pérez</span>
-                <a class="email" href="mailto:Diegopmansilla@gmail.com">Diegopmansilla@gmail.com</a>
-                <div class="adr">
-                    <div class="street-address">Av. de las Arcas del Agua</div>
-                    <span class="locality">Getafe</span>
-                    ,
-                    <span class="region">Madrid</span>
-                    ,
-                    <span class="postal-code">28905</span>
+                <!-- Tarjeta de datos personales -->
+                <div id="hcard-Diego-Pérez" class="vcard">
+                    <div class="org">CFTIC</div>
+                    <!-- <div hidden> -->
+                    <span class="fn">Diego Pérez</span>
+                    <a class="email" href="mailto:Diegopmansilla@gmail.com">Diegopmansilla@gmail.com</a>
+                    <div class="adr">
+                        <div class="street-address">Av. de las Arcas del Agua</div>
+                        <span class="locality">Getafe</span>
+                        ,
+                        <span class="region">Madrid</span>
+                        ,
+                        <span class="postal-code">28905</span>
 
-                    <span class="country-name">Spain</span>
+                        <span class="country-name">Spain</span>
+                    </div>
                 </div>
-            </div>
-
+        </div>
         </address>
         <p>&copy; CFTIC Certificado de profesionalidad - 2018</p>
-        <p>
+
     </footer>
 
 </body>
