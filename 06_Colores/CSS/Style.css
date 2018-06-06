@@ -14,7 +14,7 @@ section>div>div {
     margin-top: 1rem;
     margin-left: 1rem;
     border: 1px solid;
-    background-color: rgb(138, 43, 226, 0.5); /* -> no se hereda, simplemente se le asigna al onjeto. */ 
+    background-color: rgb(138, 43, 226, 0.5); /* -> no se hereda, simplemente se le asigna al objeto. */ 
 }
 
 /* Gradiente */
@@ -22,4 +22,4 @@ aside>div{
     width: 8rem;
     height: 8rem;
     background: linear-gradient(chartreuse, blueviolet)
-}
+}   
