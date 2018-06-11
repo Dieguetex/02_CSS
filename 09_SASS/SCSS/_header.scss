@@ -8,7 +8,7 @@ $fondo2: mix($fondo,$fondo1);
 $fondo3: saturate(darken($fondo,40), 10);
 $margen1: 20%;
 $margen2: 10%;
-$margen3: $margen1+$margen2;
+$margen3: $margen1 + $margen2;
 
 header{ 
     width: 60%;
