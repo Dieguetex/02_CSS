@@ -47,7 +47,7 @@ header {
         height: 100%;
         background-image: url("../assets/home-bg.jpg");
         background-repeat: no-repeat;
-        background-size: cover
+        background-size: cover;
     }
 
     div.transparency::before {
@@ -78,7 +78,7 @@ nav {
     z-index: 10;
     right: 0;
 
-    ul {
+    ul {    
         list-style: none;
         padding: 0;
       
@@ -90,6 +90,7 @@ nav {
             display: block; 
         }
     }
+
     a {
         display: block;
         color:inherit;
@@ -98,8 +99,9 @@ nav {
         color: white;
         font-family: 'Merriweather', serif;
     }
+
     a:hover {
-        background-color: darkolivegreen
+        background-color: darkolivegreen;
     }
 
     >ul {

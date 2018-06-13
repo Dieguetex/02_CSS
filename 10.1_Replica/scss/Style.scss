@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 70vh;
+    position: relative;
+
+
+    div.img_background {
+        position: absolute;
+        background-image: url("../Assets/home-bg.jpg");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    div.img_background::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        opacity: 0.4;
+    }
+    h1 {
+        position: relative;
+        text-align: center;
+        line-height: 70vh;
+        clear: both;
+        margin: 0;
+        font-size: 3rem;
+        font-family: 'Merriweather', serif;
+        color: white;
+    }
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+
+    >ul {
+
+        >li {
+            display: inline-block;
+            position: relative;
+            
+
+            &:hover>ul {
+                position: absolute;
+                top: 2.5rem;
+                left: 1.5rem;
+            }
+
+            >a {
+                display: inline;
+                padding: 1rem 2rem;
+            }
+
+            >ul>li:hover ul {
+                position: absolute;
+                top: 0rem;
+                left: 7rem;
+            }
+        }
+    }   
+
+    ul {
+        list-style: none;
+        padding: 0;
+        ul{
+            display: none;
+        }
+        li:hover>ul  {
+            display: block
+        }   
+    } 
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 0.3rem 2rem;
+        font-family: 'Merriweather', serif;
+
+
+        &:hover {
+            background-color: darkolivegreen;
+        }
+    }    
+}
+        
+main{
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    section{
+        width: 75%;
+        float: left;
+        padding-top: 2rem;
+
+        div.columna {
+            float: left;
+            width: 50%;  
+            padding-right: 1rem;
+            padding-left: 1rem; 
+
+            p:nth-of-type(1) {
+                margin-top: 0
+            }
+        }
+    }
+}
+
+aside {
+    width: 25%;
+    float: left;
+    padding-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 20vh;
+    border-top: 1px solid silver;
+}
