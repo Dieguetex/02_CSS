@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+section {
+    display: flex;
+    background-color: rgb(169, 169, 169);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    height: 90vh;
+}
+
+div {
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: darkcyan;
+    border-radius: 20%;
+    border: 1px solid silver;
+}
+
+div:nth-of-type(1) {
+    order: 4;
+}
+div:nth-of-type(2) {
+    order: 3;
+}
+div:nth-of-type(3) {
+    font-size: 5rem;
+    order: 1;
+}
+div:nth-of-type(4) {
+    order: 2;
+}
