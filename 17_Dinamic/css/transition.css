@@ -8,9 +8,10 @@ h1 {
   opacity: 0;
   /* transition-property: font-size;
   transition-duration: 3s;
+  transition-timing-function: cubic-bezier(.83,.76,.42,1.45); 
   transition-delay: 1s;
-  transition-timing-function: cubic-bezier(.83,.76,.42,1.45); */
-  transition: all 3s linear;
+  */
+  transition: all 1s linear;
 }
 h1:hover {
   font-size: 3rem;

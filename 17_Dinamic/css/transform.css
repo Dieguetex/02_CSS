@@ -1,0 +1,53 @@
+body {
+  margin-left: 2rem;
+}
+
+section {
+  margin-top: 2rem;
+  min-height: 80vh;
+}
+
+div {
+  width: 20rem;
+  height: 20rem;
+  background-color: brown;
+  transition: transform 0.5s linear;
+}
+
+button {
+  margin-bottom: 2rem;
+}
+
+.rotate button:hover + div {
+  transform-origin: center;
+  transform: rotate(45deg);
+}
+
+.skew button:hover + div {
+  /*  transform-origin: center; */
+  /* skew() - skewx() - skewy() */
+  transform: skewx(20deg);
+}
+
+.scale button:hover + div {
+  /*  transform-origin: center; */
+  /* skew() - skewx() - skewy() */
+  transform-origin: center;
+  transform: scale(1.5);
+}
+
+.translate button:hover + div {
+  /*  transform-origin: center; */
+  /* skew() - skewx() - skewy() */
+  transform: translatex(20rem);
+}
+
+/* 
+
+space -> descendiente
+> -> hijo
++ -> hermano adyacente
+~ -> hermano posterior
+*/
+
+/*# sourceMappingURL=css/transform.css.map */
