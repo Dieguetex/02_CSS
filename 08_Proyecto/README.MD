@@ -14,3 +14,8 @@
     - About (Archivo independiente)
 - Footer: datos de autoria y copi
 - Address con formato h card
+
+# Estilos #
+
+-RWD -> Mobile first
+-Mínimo 3 mediaqueries (incluida la 0)
