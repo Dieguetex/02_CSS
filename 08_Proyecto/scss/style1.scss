@@ -1,0 +1,227 @@
+*, 
+*::before, *::after, 
+*:before, *:after { 
+box-sizing : border-box;
+}
+
+body {
+    margin: 0;
+}
+
+$color_main: #FCFFF5;
+$color_back: #3E606F;
+
+
+header {
+    position: relative;
+    height: 20vh;
+    background-image: url('../assets/ico-destinonegocio-ee.uu-istock-getty-images-1019x430.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+
+    padding-right: 1rem;
+    padding-left: 1rem;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        content: "";
+        background-color: black;
+        opacity: 0.5; 
+    }
+      
+    h1 {
+        position: relative;
+        font-family: "Merriweather", serif;
+        font-size: 2rem;
+        padding-right: 0.3rem;
+        color: #FCFFF5;
+    }
+    nav {
+        position: relative;
+        font-size: 2rem;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+nav.menu-mobile,
+nav.menu-desk {
+    background-color: $color_main;
+    color: $color_back;
+    font-family: "Merriweather", serif;
+    a {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        display: block;
+
+        &:hover {
+            background-color: $color_back;
+            color: $color_main;
+        }
+    }  
+}
+nav.hide-menu {
+    display: none;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Montserrat', sans-serif;
+    h2 {
+        font-size: 2rem,
+    }
+}
+
+
+/* Imágenes */
+img {
+    width: 100%;
+    display: block;  
+}
+
+div.imagentexto, figure {
+    margin: 0;
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+}
+
+div.imagen_about {
+    margin-left: 10%;
+    width: 20%;
+    max-width: 300px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+
+/*** Tabla ***/
+div.table {
+    padding-top: 2rem;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 0.5rem 2rem;
+}
+
+th {
+    background-color: #3E606F;
+    color: #FCFFF5;
+}
+
+td {
+    background-color: rgb(215, 239, 255);
+}
+
+
+/*** footer ***/
+footer {
+    border-top: 1px solid silver;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    min-height: 30vh;
+    text-align: center;
+    background-color: #3E606F;
+    color: #FCFFF5;
+
+    :last-child {
+        margin-bottom: 0;   
+    }
+
+    div {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (min-width:620px) {
+
+    header {
+        height: 30vh;
+        h1 { 
+            font-size: 4rem;
+        }
+    }
+
+
+   
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media screen and (min-width:820px ) {
+    header {
+        justify-content: flex-start;
+        height: 50vh;
+
+        h1 { 
+            padding-left: 1rem;
+        } 
+        nav {
+            display: none;
+        }
+    } 
+    nav.menu-mobile {
+        display: none;
+    }   
+    
+    nav.menu-desk {
+        display: block;
+        position: absolute;
+        background-color: rgba(62, 96, 111, 0);
+        color: $color_main;
+        font-size: 1.2rem;
+        right: 0;
+        top: 0;
+        ul {
+            display: flex;
+            li {
+                position: relative;
+                &:hover ul {
+                display: block;
+                }
+            } 
+        }
+        a {
+            padding: 0.5rem  1rem;
+            display: block;
+            &:hover {
+                background-color: $color_main;
+                color: $color_back;
+            }
+        }  
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 2rem;
+            left: -2rem;
+            background-color: rgba(165, 53, 53, 0.5 )
+        }
+    }
+}
+
+
