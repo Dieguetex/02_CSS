@@ -14,14 +14,13 @@ $color_back: #3E606F;
 
 header {
     position: relative;
-    height: 20vh;
+    height: 30vh;
     background-image: url('../assets/ico-destinonegocio-ee.uu-istock-getty-images-1019x430.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center; 
-
     padding-right: 1rem;
     padding-left: 1rem;
     &::before {
@@ -37,14 +36,19 @@ header {
       
     h1 {
         position: relative;
-        font-family: "Merriweather", serif;
-        font-size: 2rem;
+        font-family: 'Indie Flower', cursive;
+        font-size: 2    rem;
         padding-right: 0.3rem;
         color: #FCFFF5;
     }
     nav {
         position: relative;
         font-size: 2rem;
+    }
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
     }
 }
 
@@ -62,17 +66,32 @@ nav.menu-mobile,
 nav.menu-desk {
     background-color: $color_main;
     color: $color_back;
-    font-family: "Merriweather", serif;
+    font-family: 'Indie Flower', cursive;
+    ul {
+        margin: 0;
+        padding-left: 0;
+        margin-top: 5rem;
+    
+    }
+    li{
+        text-align: center;
+        &:last-child {
+            border-bottom: 1px solid silver;
+        }
+    }
     a {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        padding-left: 1rem;
+        padding-left: 0rem;
         display: block;
+        transition: all 0.2s linear;
+        border-top: 1px silver solid;
 
         &:hover {
             background-color: $color_back;
-            color: $color_main;
+            color: rgb(252, 255, 245);
         }
+
     }  
 }
 nav.hide-menu {
@@ -115,12 +134,17 @@ div.imagen_about {
 div.table {
     padding-top: 2rem;
     width: 100%;
-    display: block;
-    overflow-x: auto;
+    /* display: block; */
+    /* overflow-x: auto; */
+}
+table {
+    width: 100%;
+    font-size: 0.7rem;
 }
 
-th, td {
-    padding: 0.5rem 2rem;
+td {
+    padding: 0.25rem 1rem;
+    text-align: center;
 }
 
 th {
@@ -136,7 +160,7 @@ td {
 /*** footer ***/
 footer {
     border-top: 1px solid silver;
-    margin-top: 2rem;
+    margin-top: 15rem;
     padding-top: 1rem;
     min-height: 30vh;
     text-align: center;
@@ -156,15 +180,16 @@ footer {
 @media screen and (min-width:620px) {
 
     header {
-        height: 30vh;
+        height: 35vh;
         h1 { 
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 
-
+    table {
+        font-size: 1rem;
+    }
    
-
     main {
         margin-left: 10%;
         margin-right: 10%;
@@ -179,10 +204,16 @@ footer {
 
         h1 { 
             padding-left: 1rem;
+            font-size: 4rem;
         } 
         nav {
             display: none;
+            a {
+                font-size: 1.2rem;
+            }
+            
         }
+
     } 
     nav.menu-mobile {
         display: none;
@@ -198,29 +229,21 @@ footer {
         top: 0;
         ul {
             display: flex;
-            li {
-                position: relative;
-                &:hover ul {
-                display: block;
-                }
-            } 
+            margin-top: 0;
+            li:last-child {
+                border-bottom: none;
+            }
         }
         a {
             padding: 0.5rem  1rem;
             display: block;
+            transition: color 0.2s linear;
+            border-top: none;
             &:hover {
-                background-color: $color_main;
-                color: $color_back;
+                color: rgb(131, 131, 131);
+                background-color: rgba(62, 96, 111, 0);
             }
         }  
-
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 2rem;
-            left: -2rem;
-            background-color: rgba(165, 53, 53, 0.5 )
-        }
     }
 }
 
