@@ -54,10 +54,11 @@ header {
         list-style: none;
         text-decoration: none;
         color: inherit;
-        &.bars {
-            color: #FCFFF5
-        }
     }
+}
+
+.fa-bars:before {
+    color: #FCFFF5;
 }
 
 nav {
