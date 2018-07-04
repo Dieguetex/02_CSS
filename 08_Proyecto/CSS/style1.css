@@ -8,12 +8,9 @@
 body {
   margin: 0;
 }
-
-/* BANNER WEBHOST */
 body > div {
-  height: 0;
+  width: 0;
 }
-/* --- */
 
 header {
   position: relative;
@@ -52,6 +49,9 @@ header a {
   list-style: none;
   text-decoration: none;
   color: inherit;
+}
+header a.bars {
+  color: #FCFFF5;
 }
 
 nav ul {
@@ -128,7 +128,7 @@ div.about p:nth-of-type(1) {
 }
 
 /* Imágenes */
-img.img {
+img {
   width: 100%;
 }
 

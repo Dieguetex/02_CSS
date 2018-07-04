@@ -54,6 +54,9 @@ header {
         list-style: none;
         text-decoration: none;
         color: inherit;
+        &.bars {
+            color: #FCFFF5
+        }
     }
 }
 
