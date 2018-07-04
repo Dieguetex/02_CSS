@@ -6,7 +6,12 @@ box-sizing : border-box;
 
 body {
     margin: 0;
+    >div{
+    width: 0;
 }
+}
+
+
 
 $color_main: #FCFFF5;
 $color_back: #3E606F;

@@ -8,6 +8,9 @@
 body {
   margin: 0;
 }
+body > div {
+  width: 0;
+}
 
 header {
   position: relative;
